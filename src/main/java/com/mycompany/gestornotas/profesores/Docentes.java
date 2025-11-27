@@ -4,69 +4,50 @@
  */
 package com.mycompany.gestornotas.profesores;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Admin
  */
-public class Docentes {
-    private int cedula;
-    private String nombre;
-    private String apellido;
-    private String titulo_Academico;
-    private String correo_Institucional;
+public class Docentes implements IDocentes {
 
-    public Docentes(int cedula, String nombre, String apellido, String titulo_Academico, String correo_Institucional) {
-        this.cedula = cedula;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.titulo_Academico = titulo_Academico;
-        this.correo_Institucional = correo_Institucional;
-    }
+    private List<Docente> docentes;
 
-    public int getCedula() {
-        return cedula;
-    }
-
-    public void setCedula(int cedula) {
-        this.cedula = cedula;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public String getTitulo_Academico() {
-        return titulo_Academico;
-    }
-
-    public void setTitulo_Academico(String titulo_Academico) {
-        this.titulo_Academico = titulo_Academico;
-    }
-
-    public String getCorreo_Institucional() {
-        return correo_Institucional;
-    }
-
-    public void setCorreo_Institucional(String correo_Institucional) {
-        this.correo_Institucional = correo_Institucional;
-    }
-
-    @Override
-    public String toString() {
-        return "Docentes{" + "cedula=" + cedula + ", nombre=" + nombre + ", apellido=" + apellido + ", titulo_Academico=" + titulo_Academico + ", correo_Institucional=" + correo_Institucional + '}';
+    public Docentes(){
+        docentes = new ArrayList<>();
     }
     
     
+    public void agregar(Docente d) {
+        docentes.add(d);
+    }
+
+    public Docente obtener(String cedula) {
+        for (Docente d : docentes) {
+            if (d.getCedula().equals(cedula)) {
+                return d;
+            }
+        }
+        return null;
+    }
+
+    public boolean actualizar(String cedula, Docente nuevo) {
+        for (int i = 0; i < docentes.size(); i++) {
+            if (docentes.get(i).getCedula().equals(cedula)) {
+                docentes.set(i, nuevo);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean eliminar(String cedula) {
+        return docentes.removeIf(d -> d.getCedula().equals(cedula));
+    }
+
+    public List<Docente> obtenerTodos() {
+        return docentes;
+    }
 }

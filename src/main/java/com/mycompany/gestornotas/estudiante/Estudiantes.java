@@ -4,52 +4,55 @@
  */
 package com.mycompany.gestornotas.estudiante;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Admin
  */
 public class Estudiantes {
-    private int codigoEstudiante;
-    private String nombreEstudiante;
-    private String apellidoEstudiantes;
-    private String correoInstEstudinate;
 
-    public int getCodigoEstudiante() {
-        return codigoEstudiante;
+    private List<Estudiante> estudiantes;
+
+    public Estudiantes() {
+        estudiantes = new ArrayList<>();
     }
 
-    public void setCodigoEstudiante(int codigoEstudiante) {
-        this.codigoEstudiante = codigoEstudiante;
+    // ✔ Agregar nuevo estudiante
+    public void agregar(Estudiante estudiante) {
+        estudiantes.add(estudiante);
     }
 
-    public String getNombreEstudiante() {
-        return nombreEstudiante;
+    // ✔ Actualizar estudiante existente
+    public void actualizar(Estudiante estudianteActualizado) {
+        for (int i = 0; i < estudiantes.size(); i++) {
+            Estudiante e = estudiantes.get(i);
+            if (e.getCodigoEstudiante() == estudianteActualizado.getCodigoEstudiante()) {
+                estudiantes.set(i, estudianteActualizado);
+                return;
+            }
+        }
     }
 
-    public void setNombreEstudiante(String nombreEstudiante) {
-        this.nombreEstudiante = nombreEstudiante;
+    // ✔ Eliminar estudiante por código
+    public void eliminar(int codigoEstudiante) {
+        estudiantes.removeIf(e -> e.getCodigoEstudiante() == codigoEstudiante);
     }
 
-    public String getApellidoEstudiantes() {
-        return apellidoEstudiantes;
+    // ✔ Obtener un estudiante por código
+    public Estudiante obtener(int codigoEstudiante) {
+        for (Estudiante e : estudiantes) {
+            if (e.getCodigoEstudiante() == codigoEstudiante) {
+                return e;
+            }
+        }
+        return null;
     }
 
-    public void setApellidoEstudiantes(String apellidoEstudiantes) {
-        this.apellidoEstudiantes = apellidoEstudiantes;
+    // ✔ Obtener todos los estudiantes
+    public List<Estudiante> obtenerTodos() {
+        return estudiantes;
     }
 
-    public String getCorreoInstEstudinate() {
-        return correoInstEstudinate;
-    }
-
-    public void setCorreoInstEstudinate(String correoInstEstudinate) {
-        this.correoInstEstudinate = correoInstEstudinate;
-    }
-
-    @Override
-    public String toString() {
-        return "Estudiantes{" + "codigoEstudiante=" + codigoEstudiante + ", nombreEstudiante=" + nombreEstudiante + ", apellidoEstudiantes=" + apellidoEstudiantes + ", correoInstEstudinate=" + correoInstEstudinate + '}';
-    }
-    
-    
 }

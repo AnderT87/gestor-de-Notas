@@ -9,16 +9,17 @@ package com.mycompany.gestornotas.asignatura;
  * @author Admin
  */
 public class Asignatura {
+
     private int codigoAsignatura;
     private int asignatura;
     private String nombreAsignatura;
     private String periodo;
 
-    public Asignatura(int asignatura, String nombreAsignatura, String periodo) {
+    public Asignatura(int codigoAsignatura, int asignatura, String nombreAsignatura, String periodo) {
         this.asignatura = asignatura;
         this.nombreAsignatura = nombreAsignatura;
         this.periodo = periodo;
-        this.codigoAsignatura= codigoAsignatura;
+        this.codigoAsignatura = codigoAsignatura;
     }
 
     public int getAsignatura() {
@@ -53,14 +54,9 @@ public class Asignatura {
         this.codigoAsignatura = codigoAsignatura;
     }
 
-    
-
     @Override
     public String toString() {
         return "Asignatura{" + "codigoAsignatura=" + codigoAsignatura + ", asignatura=" + asignatura + ", nombreAsignatura=" + nombreAsignatura + ", periodo=" + periodo + '}';
     }
 
-    
-    
-    
 }
