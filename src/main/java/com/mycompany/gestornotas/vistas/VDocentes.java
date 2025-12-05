@@ -4,8 +4,11 @@
  */
 package com.mycompany.gestornotas.vistas;
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 29ef97b1fada57bfd1ccdf807e7e84d99048cfb4
 import java.awt.Color;
 
 /**
@@ -20,7 +23,10 @@ public class VDocentes extends javax.swing.JFrame {
     public VDocentes() {
         initComponents();
         agregarListeners();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 29ef97b1fada57bfd1ccdf807e7e84d99048cfb4
         
     }
     
@@ -36,6 +42,10 @@ public class VDocentes extends javax.swing.JFrame {
         this.dispose();
     }
     
+<<<<<<< HEAD
+=======
+   
+>>>>>>> 29ef97b1fada57bfd1ccdf807e7e84d99048cfb4
 
     /**
      * This method is called from within the constructor to initialize the form.

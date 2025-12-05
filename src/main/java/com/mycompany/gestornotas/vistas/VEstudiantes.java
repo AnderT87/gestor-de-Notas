@@ -19,7 +19,11 @@ public class VEstudiantes extends javax.swing.JFrame {
     public VEstudiantes() {
         initComponents();
         agregarListeners();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 29ef97b1fada57bfd1ccdf807e7e84d99048cfb4
     }
     
     private void agregarListeners() {
@@ -34,7 +38,11 @@ public class VEstudiantes extends javax.swing.JFrame {
         this.dispose();
     }
     
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 29ef97b1fada57bfd1ccdf807e7e84d99048cfb4
 
     /**
      * This method is called from within the constructor to initialize the form.
