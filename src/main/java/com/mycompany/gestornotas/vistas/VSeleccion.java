@@ -5,8 +5,7 @@
 package com.mycompany.gestornotas.vistas;
 
 import java.awt.Color;
-import com.mycompany.gestornotas.utilidades.PanelRedondeado;
-import com.mycompany.gestornotas.utilidades.BorderRedondeado;
+
 
 /**
  *
@@ -19,7 +18,8 @@ public class VSeleccion extends javax.swing.JFrame {
         
         initComponents();
         agregarListeners();
-        aplicarBordesRedondeados();
+
+       
         
 
     }
@@ -36,14 +36,7 @@ public class VSeleccion extends javax.swing.JFrame {
         this.dispose();
     }
     
-    private void aplicarBordesRedondeados() {
-        jPanel2.setBorder(new BorderRedondeado(15, new Color(45, 70, 120)));
-        jPanel3.setBorder(new BorderRedondeado(15, new Color(25, 45, 85)));
-        jButton5.setBorder(new BorderRedondeado(10, new Color(30, 144, 255)));
-        jButton6.setBorder(new BorderRedondeado(10, new Color(30, 144, 255)));
-        jButton7.setBorder(new BorderRedondeado(10, new Color(30, 144, 255)));
-        jButton8.setBorder(new BorderRedondeado(10, new Color(30, 144, 255)));
-    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -97,7 +90,8 @@ public class VSeleccion extends javax.swing.JFrame {
             .addGap(0, 477, Short.MAX_VALUE)
         );
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/logo-espoch.png"))); // NOI18N
+
+        //jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/logo-espoch.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -136,7 +130,8 @@ public class VSeleccion extends javax.swing.JFrame {
                 .addGap(16, 16, 16))
         );
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/istockphoto-1268716253-612x612.jpg"))); // NOI18N
+
+        //jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/istockphoto-1268716253-612x612.jpg"))); // NOI18N
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 255));
 
@@ -160,7 +155,8 @@ public class VSeleccion extends javax.swing.JFrame {
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
         jButton8.setText("ASIG_ESTUDIANTES");
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/logo-espoch.png"))); // NOI18N
+
+        //jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/logo-espoch.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);

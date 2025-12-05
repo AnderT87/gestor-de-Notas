@@ -4,8 +4,8 @@
  */
 package com.mycompany.gestornotas.vistas;
 
-import com.mycompany.gestornotas.utilidades.PanelRedondeado;
-import com.mycompany.gestornotas.utilidades.BorderRedondeado;
+
+
 import java.awt.Color;
 
 /**
@@ -20,7 +20,7 @@ public class VAsignaturas extends javax.swing.JFrame {
     public VAsignaturas() {
         initComponents();
         agregarListeners();
-        aplicarBordesRedondeados();
+
     }
     
     private void agregarListeners() {
@@ -35,18 +35,6 @@ public class VAsignaturas extends javax.swing.JFrame {
         this.dispose();
     }
     
-    private void aplicarBordesRedondeados() {
-        jPanel2.setBorder(new BorderRedondeado(15, new Color(0, 102, 255)));
-        jPanel3.setBorder(new BorderRedondeado(15, new Color(0, 0, 102)));
-        jPanel1.setBorder(new BorderRedondeado(15, new Color(200, 200, 200)));
-        jButton5.setBorder(new BorderRedondeado(10, new Color(0, 102, 255)));
-        jButton6.setBorder(new BorderRedondeado(10, new Color(0, 102, 255)));
-        jButton7.setBorder(new BorderRedondeado(10, new Color(0, 102, 255)));
-        jButton8.setBorder(new BorderRedondeado(10, new Color(0, 102, 255)));
-        jButton4.setBorder(new BorderRedondeado(10, new Color(102, 255, 51)));
-        jButton2.setBorder(new BorderRedondeado(10, new Color(102, 204, 255)));
-        jButton3.setBorder(new BorderRedondeado(10, new Color(255, 0, 0)));
-    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -129,7 +117,7 @@ public class VAsignaturas extends javax.swing.JFrame {
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
         jButton8.setText("ASIG_ESTUDIANTES");
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/logo-espoch.png"))); // NOI18N
+       // jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/logo-espoch.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
