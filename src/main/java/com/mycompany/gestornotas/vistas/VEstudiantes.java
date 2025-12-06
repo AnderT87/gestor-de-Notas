@@ -110,7 +110,7 @@ public class VEstudiantes extends javax.swing.JFrame {
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
         jButton8.setText("ASIG_ESTUDIANTES");
 
-       // jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/logo-espoch.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/logo-espoch.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -143,7 +143,7 @@ public class VEstudiantes extends javax.swing.JFrame {
         );
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel1.setText("GESTIONAR  ASIGNATURAS");
+        jLabel1.setText("GESTIONAR  ESTUDIANTES");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setText("Nombre Estudiante");

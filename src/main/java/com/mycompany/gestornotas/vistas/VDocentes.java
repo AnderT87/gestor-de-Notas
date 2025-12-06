@@ -17,6 +17,7 @@ public class VDocentes extends javax.swing.JFrame {
      */
     public VDocentes() {
         initComponents();
+        agregarListeners();
         
     }
     
