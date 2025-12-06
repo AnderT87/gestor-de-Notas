@@ -5,10 +5,6 @@
 package com.mycompany.gestornotas.vistas;
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 29ef97b1fada57bfd1ccdf807e7e84d99048cfb4
 import java.awt.Color;
 
 /**
@@ -24,10 +20,6 @@ public class VAsign_Estudiante extends javax.swing.JFrame {
         initComponents();
         agregarListeners();
         
-<<<<<<< HEAD
-
-=======
->>>>>>> 29ef97b1fada57bfd1ccdf807e7e84d99048cfb4
     }
     
     private void agregarListeners() {
@@ -42,12 +34,7 @@ public class VAsign_Estudiante extends javax.swing.JFrame {
         this.dispose();
     }
     
-<<<<<<< HEAD
 
-
-=======
- 
->>>>>>> 29ef97b1fada57bfd1ccdf807e7e84d99048cfb4
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -127,10 +114,7 @@ public class VAsign_Estudiante extends javax.swing.JFrame {
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
         jButton8.setText("ASIG_ESTUDIANTES");
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 29ef97b1fada57bfd1ccdf807e7e84d99048cfb4
         //jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/logo-espoch.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
