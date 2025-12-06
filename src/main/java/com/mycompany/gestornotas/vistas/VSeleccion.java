@@ -84,7 +84,7 @@ public class VSeleccion extends javax.swing.JFrame {
             .addGap(0, 477, Short.MAX_VALUE)
         );
 
-        //jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/logo-espoch.png"))); // NOI18N
+        
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -123,7 +123,7 @@ public class VSeleccion extends javax.swing.JFrame {
                 .addGap(16, 16, 16))
         );
 
-        //jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/istockphoto-1268716253-612x612.jpg"))); // NOI18N
+       
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 255));
 
@@ -135,9 +135,9 @@ public class VSeleccion extends javax.swing.JFrame {
         jButton8.setBackground(new java.awt.Color(0, 102, 255));
         jButton8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("ASIG_ESTUDIANTES");
+        jButton8.setText("ESTUDIANTE");
 
-        //jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/logo-espoch.png"))); // NOI18N
+        
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
