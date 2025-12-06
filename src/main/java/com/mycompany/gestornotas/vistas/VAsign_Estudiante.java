@@ -47,7 +47,7 @@ public class VAsign_Estudiante extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jButton8 = new javax.swing.JButton();
+        btnAsig_Estudiantes = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         btnRegresar1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -91,22 +91,22 @@ public class VAsign_Estudiante extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 255));
 
-        jButton8.setBackground(new java.awt.Color(0, 102, 255));
-        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("ASIG_ESTUDIANTES");
+        btnAsig_Estudiantes.setBackground(new java.awt.Color(0, 102, 255));
+        btnAsig_Estudiantes.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnAsig_Estudiantes.setForeground(new java.awt.Color(255, 255, 255));
+        btnAsig_Estudiantes.setText("ASIG_ESTUDIANTES");
 
-        //jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/logo-espoch.png"))); // NOI18N
+
 
         btnRegresar1.setBackground(new java.awt.Color(255, 0, 0));
         btnRegresar1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnRegresar1.setForeground(new java.awt.Color(255, 255, 255));
         btnRegresar1.setText("Regresar");
         btnRegresar1.addActionListener(new java.awt.event.ActionListener() {
-        public void actionPerformed(java.awt.event.ActionEvent evt) {
-            dispose();
-            new VSeleccion().setVisible(true);
-            }    
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dispose();
+                new VSeleccion().setVisible(true);
+            }
         });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -120,14 +120,14 @@ public class VAsign_Estudiante extends javax.swing.JFrame {
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnRegresar1))
-                    .addComponent(jButton8))
+                    .addComponent(btnAsig_Estudiantes))
                 .addContainerGap(42, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(240, 240, 240)
-                .addComponent(jButton8)
+                .addComponent(btnAsig_Estudiantes)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(60, 60, 60)
@@ -322,12 +322,12 @@ public class VAsign_Estudiante extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAsig_Estudiantes;
     private javax.swing.JButton btnBuscar;
     private javax.swing.JButton btnRegresar1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

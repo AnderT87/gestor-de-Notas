@@ -22,9 +22,9 @@ public class VDocentes extends javax.swing.JFrame {
     }
     
     private void agregarListeners() {
-        jButton6.addActionListener(e -> abrirVista(new VAsignaturas()));
-        jButton7.addActionListener(e -> abrirVista(new VEstudiantes()));
-        jButton8.addActionListener(e -> abrirVista(new VAsign_Estudiante()));
+        btnAsignaturas.addActionListener(e -> abrirVista(new VAsignaturas()));
+        btnEstudiantes.addActionListener(e -> abrirVista(new VEstudiantes()));
+        btnAsig_estudiantes.addActionListener(e -> abrirVista(new VAsign_Estudiante()));
     }
     
     private void abrirVista(javax.swing.JFrame vista) {
@@ -58,10 +58,10 @@ public class VDocentes extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        btnDocentes = new javax.swing.JButton();
+        btnAsignaturas = new javax.swing.JButton();
+        btnEstudiantes = new javax.swing.JButton();
+        btnAsig_estudiantes = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
 
         jButton10.setBackground(new java.awt.Color(102, 255, 51));
@@ -161,27 +161,27 @@ public class VDocentes extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 255));
 
-        jButton5.setBackground(new java.awt.Color(0, 102, 255));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("DOCENTES");
+        btnDocentes.setBackground(new java.awt.Color(0, 102, 255));
+        btnDocentes.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnDocentes.setForeground(new java.awt.Color(255, 255, 255));
+        btnDocentes.setText("DOCENTES");
 
-        jButton6.setBackground(new java.awt.Color(0, 102, 255));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("ASIGNATURAS");
+        btnAsignaturas.setBackground(new java.awt.Color(0, 102, 255));
+        btnAsignaturas.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnAsignaturas.setForeground(new java.awt.Color(255, 255, 255));
+        btnAsignaturas.setText("ASIGNATURAS");
 
-        jButton7.setBackground(new java.awt.Color(0, 102, 255));
-        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("ESTUDIANTES");
+        btnEstudiantes.setBackground(new java.awt.Color(0, 102, 255));
+        btnEstudiantes.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnEstudiantes.setForeground(new java.awt.Color(255, 255, 255));
+        btnEstudiantes.setText("ESTUDIANTES");
 
-        jButton8.setBackground(new java.awt.Color(0, 102, 255));
-        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("ASIG_ESTUDIANTES");
+        btnAsig_estudiantes.setBackground(new java.awt.Color(0, 102, 255));
+        btnAsig_estudiantes.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnAsig_estudiantes.setForeground(new java.awt.Color(255, 255, 255));
+        btnAsig_estudiantes.setText("ASIG_ESTUDIANTES");
 
-        //jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/logo-espoch.png"))); // NOI18N
+       
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -191,23 +191,23 @@ public class VDocentes extends javax.swing.JFrame {
                 .addGap(34, 34, 34)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel7)
-                    .addComponent(jButton5)
-                    .addComponent(jButton8)
-                    .addComponent(jButton6)
-                    .addComponent(jButton7))
+                    .addComponent(btnDocentes)
+                    .addComponent(btnAsig_estudiantes)
+                    .addComponent(btnAsignaturas)
+                    .addComponent(btnEstudiantes))
                 .addContainerGap(42, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addComponent(jButton5)
+                .addComponent(btnDocentes)
                 .addGap(39, 39, 39)
-                .addComponent(jButton6)
+                .addComponent(btnAsignaturas)
                 .addGap(46, 46, 46)
-                .addComponent(jButton7)
+                .addComponent(btnEstudiantes)
                 .addGap(35, 35, 35)
-                .addComponent(jButton8)
+                .addComponent(btnAsig_estudiantes)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27))
@@ -275,8 +275,7 @@ public class VDocentes extends javax.swing.JFrame {
                                     .addComponent(jButton3)
                                     .addComponent(jButton4))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0))
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -324,15 +323,15 @@ public class VDocentes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAsig_estudiantes;
+    private javax.swing.JButton btnAsignaturas;
     private javax.swing.JButton btnBuscar;
+    private javax.swing.JButton btnDocentes;
+    private javax.swing.JButton btnEstudiantes;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
