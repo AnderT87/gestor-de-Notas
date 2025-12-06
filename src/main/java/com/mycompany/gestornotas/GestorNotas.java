@@ -14,7 +14,17 @@ public class GestorNotas {
 
     public static void main(String[] args) {
         //visualizar la vista 
-        VSeleccion vista = new VSeleccion();
-        vista.setVisible(true);
+        try {
+        for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+            if ("Nimbus".equals(info.getName())) {
+                javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                break;
+            }
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+
+    new VSeleccion().setVisible(true);
     }
 }
