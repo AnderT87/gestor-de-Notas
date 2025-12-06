@@ -25,8 +25,6 @@ public class VSeleccion extends javax.swing.JFrame {
     
     private void agregarListeners() {
         jButton5.addActionListener(e -> abrirVista(new VDocentes()));
-        jButton6.addActionListener(e -> abrirVista(new VAsignaturas()));
-        jButton7.addActionListener(e -> abrirVista(new VEstudiantes()));
         jButton8.addActionListener(e -> abrirVista(new VAsign_Estudiante()));
     }
     
@@ -60,8 +58,6 @@ public class VSeleccion extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
 
@@ -127,7 +123,6 @@ public class VSeleccion extends javax.swing.JFrame {
                 .addGap(16, 16, 16))
         );
 
-
         //jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes_icons/istockphoto-1268716253-612x612.jpg"))); // NOI18N
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 255));
@@ -136,16 +131,6 @@ public class VSeleccion extends javax.swing.JFrame {
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("DOCENTES");
-
-        jButton6.setBackground(new java.awt.Color(0, 102, 255));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("ASIGNATURAS");
-
-        jButton7.setBackground(new java.awt.Color(0, 102, 255));
-        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("ESTUDIANTES");
 
         jButton8.setBackground(new java.awt.Color(0, 102, 255));
         jButton8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -163,9 +148,7 @@ public class VSeleccion extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton5)
-                    .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton6)
-                    .addComponent(jButton7))
+                    .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(42, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -173,11 +156,7 @@ public class VSeleccion extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addComponent(jButton5)
-                .addGap(39, 39, 39)
-                .addComponent(jButton6)
-                .addGap(46, 46, 46)
-                .addComponent(jButton7)
-                .addGap(35, 35, 35)
+                .addGap(174, 174, 174)
                 .addComponent(jButton8)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -266,8 +245,6 @@ public class VSeleccion extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JColorChooser jColorChooser1;
     private javax.swing.JInternalFrame jInternalFrame1;
