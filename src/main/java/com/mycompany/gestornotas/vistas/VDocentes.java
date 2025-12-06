@@ -22,7 +22,6 @@ public class VDocentes extends javax.swing.JFrame {
     }
     
     private void agregarListeners() {
-        jButton5.addActionListener(e -> abrirVista(new VDocentes()));
         jButton6.addActionListener(e -> abrirVista(new VAsignaturas()));
         jButton7.addActionListener(e -> abrirVista(new VEstudiantes()));
         jButton8.addActionListener(e -> abrirVista(new VAsign_Estudiante()));
